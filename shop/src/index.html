@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="icon" href="./images/shop.png">
+    <link rel="stylesheet" href="shoppingcart.css" />
+    <script src="main.js" defer></script>
+    <style>
+        #cart-item-count {
+            position: absolute;
+            top: -8px;
+            right: -15px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-mft-700 pt-4">
+        <h1 class="text-center text-white">Store</h1>
+        <nav class="flex justify-between items-center px-4 py-2  mx-auto rounded-lg bg-white translate-y-6 shadow-lg md:max-w-[1280px]">
+           
+            
+            <a href="/src/index.html">
+                <img src="./images/logo.jpg" width="32px" alt="mft logo" />
+            </a>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-magnifying-glass text-xl" onclick="toggleSearch()"></i>
+                <div class="search-container">
+                    <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search"
+                    oninput="handleSearch(event)"
+                    />
+                    <div id="suggestions" class="suggestions hidden z-index: 1000000;"></div>
+                </div>
+                
+                
+               <div class="group">
+    <span>محصولات</span>
+    <i class="fa-solid fa-chevron-down"></i>
+    
+    <div class="absolute top-full pt-8 md:hidden group-hover:block">
+        <ul id="cats-menu" class="bg-white shadow-xl rounded-md px-6 py-2 flex flex-col gap-2 border-1 ">
+            <li>
+                <a href="/categories/electronics" onclick="handleAClick(event)">electronics</a>
+            </li>
+            <li>
+                <a href="/categories/jewelery" onclick="handleAClick(event)">jewelery</a>
+            </li>
+            <li>
+                <a href="/categories/men's clothing" onclick="handleAClick(event)">men's clothing</a>
+            </li>
+            <li>
+                <a href="/categories/women's clothing" onclick="handleAClick(event)">women's clothing</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+            
+         
+   
+    <div class="relative">
+        <i class="fa-solid fa-cart-shopping text-xl" onclick="toggleCart()"></i>
+        <span id="cart-item-count" class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs px-1"></span>
+    </div>
+    <div id="cart-items" class="hidden fixed right-0 top-0 w-1/3 bg-white shadow-lg p-4">
+        <h2 class="text-lg">سبد خرید</h2>
+        <div id="cart-contents"></div>
+        <div id="cart-total" class="font-bold mt-2"></div>
+        <div id="cart-contents"></div>
+        <div id="cart-total"></div>
+        
+      
+    </nav>
+    
+        
+    </header>
+    <div id="root"></div>
+    
+</body>
+</html>

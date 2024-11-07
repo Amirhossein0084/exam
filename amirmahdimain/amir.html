@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Menu Site</title>
+  <link rel="icon" href="./listen.png">
+  <link rel="stylesheet" href="../amirhosseinmain/styles.css">
+</head>
+<body>
+  <div class="loader"></div>
+  
+  <audio id="background-music" src="./../main/audio/your-music-file.mp3" autoplay loop muted></audio>
+
+  <header>
+    <h1>Lobby</h1>
+    <h3>choose what you want in amir's lobby.</h3>
+    <button id="mute-button">Play music</button>
+  </header>
+
+  <div class="menu">
+    <!-- 2x2 Grid -->
+    <div class="menu-row">
+      <div class="menu-item" data-image="../todo/todo-header.png" data-link="../todo/index.html">
+        <span class="menu-text">Todo List</span>
+      </div>
+      <div class="menu-item" data-image="../memory_game/start_photo.jpg" data-link="../memory_game/start.html">
+        <span class="menu-text">Memory Game</span>
+      </div>
+    </div>
+    <div class="menu-row">
+      <div class="menu-item" data-image="../marbazi/mar/img/back.png" data-link="../marbazi/mar/start.html">
+        <span class="menu-text">Snake Game</span>
+      </div>
+      <div class="menu-item" data-image="../laybery/image/back.jpg" data-link="../laybery/index.html">
+        <span class="menu-text">Library</span>
+      </div>
+    </div>
+  
+    <!-- 1x1 Section -->
+    <div class="menu-item large" data-image="../shop/src/images/intro.jpg" data-link="../shop/src/index.html">
+      <span class="menu-text">Shop</span>
+    </div>
+  </div>
+  
+
+  <footer>
+    <div class="end">
+    <p>&copy; 2024 Interactive Site. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../page/Privacy Policy Page/index.html">Privacy Policy</a> | 
+      <a href="../page/terms/terms.html">Terms of Service</a> | 
+      <a href="../page/contact/contact.html">Contact Us</a>
+    </div>
+  </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

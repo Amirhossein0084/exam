@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="icon" href="./image/read.png">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./BOOKS.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <span class="favContainer">لیست علاقمندی ها
+
+            <div id="favs" class="hidden"></div>
+          </span>
+        </div>
+        <div class="titles">
+          <span class="menu-icon" onclick="toggleMenu()">☰</span>
+          <div class="menu-links">
+            <a href="./about.html"><span>درباره ما</span></a>
+            <a href="./contact us.html"><span>ارتباط با ما</span></a>
+            <a href="./categories.html"><span>دسته بندی ها</span></a>
+            <a href="./blog.html"><span>وبلاگ</span></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="main__container"></div>
+      <div class="filters">
+        <div id="filterAuthors">
+          <h3>نویسنده ها</h3>
+        </div>
+
+        <div id="filterLangs">
+          <h3>زبان</h3>
+        </div>
+
+        <div id="filterGenres">
+          <h3>ژانر</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
